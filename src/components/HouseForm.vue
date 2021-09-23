@@ -78,7 +78,7 @@
     </div>
     <div class="form-group">
       <label for="imgUrl" class="">Img:</label>
-      <input v-model="editable.imgUrl"
+      <input v-model="editable.img"
              type="url"
              class="form-control"
              name="imgUrl"
@@ -118,7 +118,7 @@ export default {
       editable,
       async handleSubmit() {
         try {
-          if (editable.value.id) {
+          if (editable.value.houseId) {
             await housesService.editHouse(editable.value)
           } else {
             await housesService.createHouse(editable.value)

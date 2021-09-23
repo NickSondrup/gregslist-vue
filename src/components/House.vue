@@ -4,10 +4,9 @@
       <div class="card selectable">
         <img :src="house.img" alt="listing image" class="rounded">
         <div class="card-body">
-          <h5 class="d-flex justify-content-between">
-            <span>{{ house.address }} - {{ house.price }} -- levels: {{ house.levels }}</span>
-            <span>Bedrooms: {{ house.bedrooms }} -- Bathrooms: {{ house.bathrooms }}</span>
-          </h5>
+          <span>{{ house.address }}  ${{ house.price }}</span>
+          <span> levels: {{ house.levels }} </span>
+          <span> Bedrooms: {{ house.bedrooms }} -- Bathrooms: {{ house.bathrooms }}</span>
         </div>
       </div>
     </router-link>

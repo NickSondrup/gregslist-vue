@@ -3,7 +3,7 @@
     <div class="home-card p-5 bg-white rounded elevation-1">
       <img src="https://bcw.blob.core.windows.net/public/img/8600856373152463" alt="CodeWorks Logo" class="rounded-circle elevation-4">
       <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starter
+        Gregslist Vue
       </h1>
     </div>
   </div>

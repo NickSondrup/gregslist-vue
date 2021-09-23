@@ -23,7 +23,7 @@ class HousesService {
   }
 
   async editHouse(house) {
-    const res = await api.put(`api/houses/${house.id}`, house)
+    const res = await api.put(`api/houses/${house.houseId}`, house)
     AppState.house = new House(res.data)
   }
 

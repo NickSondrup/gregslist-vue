@@ -2,9 +2,11 @@
   <div class="sidebar d-md-flex flex-column justify-content-between bg-dark d-none d-md-block">
     <div class="top-part">
       <div class="text-white py-3">
-        <h3 class="">
-          Gregslist
-        </h3>
+        <router-link class="selectable text-light" :to="{name: 'Home'}">
+          <h3>
+            Gregslist
+          </h3>
+        </router-link>
       </div>
       <div class="links">
         <ul class="nav-links ps-0">

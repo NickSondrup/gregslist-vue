@@ -32,10 +32,10 @@
       </div>
     </div>
     <Modal id="edit-modal">
-      <template>
-        {{ house.address }} {{ housee.price }} {{ house.bedrooms }}
+      <template #modal-title>
+        {{ house.address }} {{ house.price }} {{ house.bedrooms }}
       </template>
-      <template>
+      <template #modal-body>
         <HouseForm :house="house" />
       </template>
     </Modal>
@@ -67,7 +67,7 @@ export default {
         try {
           const yes = await Pop.confirm('are you sure?')
           if (!yes) { return }
-          await housesService.removeHouse(house.id)
+          await housesService.removeHouse(house.houseId)
           router.push({ name: 'Houses' })
         } catch (e) {
           Pop.toast(e.message)

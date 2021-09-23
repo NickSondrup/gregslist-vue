@@ -7,6 +7,7 @@ export class Car {
     this.description = carData.description
     this.price = carData.price
     this.img = carData.img
+    // these come from virtuals from Database.
     this.creatorId = carData.creatorId
     this.creator = carData.creator || {}
   }
